@@ -1,0 +1,6 @@
+[{
+    "author": "The Appgineer",
+    "friendly_name": "Alarm Clock",
+    "description": "Roon Extension to start or stop playback on a specific zone at a specific time",
+    "git": "https://github.com/TheAppgineer/roon-extension-alarm-clock.git"
+}]
