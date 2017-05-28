@@ -1,6 +1,6 @@
 [{
     "author": "The Appgineer",
-    "friendly_name": "Alarm Clock",
+    "display_name": "Alarm Clock",
     "description": "Roon Extension to start or stop playback on a specific zone at a specific time",
     "repository": {
         "type": "git",

@@ -2,5 +2,9 @@
     "name": "roon-extension-repository",
     "version": "0.1.0",
     "description": "Repository of (community developed) Roon Extensions",
-    "author": "The Appgineer"
+    "author": "The Appgineer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TheAppgineer/roon-extension-repository.git"
+    }
 }
