@@ -6,4 +6,13 @@
         "type": "git",
         "url": "https://github.com/TheAppgineer/roon-extension-alarm-clock.git"
     }
+},
+{
+    "author": "Mike Plugge",
+    "display_name": "Web Controller",
+    "description": "Roon Extension which provides a web interface based remote",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pluggemi/roon-extension-repository.git"
+    }
 }]
