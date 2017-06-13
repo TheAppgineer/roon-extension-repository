@@ -15,4 +15,22 @@
         "type": "git",
         "url": "https://github.com/pluggemi/roon-web-controller.git"
     }
+},
+{
+    "author": "Doc Bobo",
+    "display_name": "Logitech Harmony",
+    "description": "Roon Source Control Extension to control Logitech Harmony activities",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/docbobo/roon-extension-harmony.git"
+    }
+},
+{
+    "author": "Doc Bobo",
+    "display_name": "Denon/Marantz AVR",
+    "description": "Roon Volume Control Extension for Denon/Marantz AV receivers",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/docbobo/roon-extension-denon.git"
+    }
 }]
