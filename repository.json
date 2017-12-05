@@ -33,4 +33,13 @@
         "type": "git",
         "url": "https://github.com/docbobo/roon-extension-denon.git"
     }
+},
+{
+    "author": "Varun Randery",
+    "display_name": "RESTful Roon Remote",
+    "description": "Control Roon using HTTP GET requests from any device",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/varunrandery/roon-remote.git"
+    }
 }]
