@@ -42,4 +42,13 @@
         "type": "git",
         "url": "https://github.com/varunrandery/roon-remote.git"
     }
+},
+{
+    "author": "The Appgineer",
+    "display_name": "Random Radio",
+    "description": "Roon Extension to play random tracks or albums",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TheAppgineer/roon-extension-random-radio.git"
+    }
 }]
