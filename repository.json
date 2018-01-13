@@ -35,6 +35,15 @@
     }
 },
 {
+    "author": "Doc Bobo",
+    "display_name": "Arcam AVR390/550/850/AV860/SR250",
+    "description": "Roon Volume Control Extension for Arcam AVR390/550/850/AV860/SR250 receivers",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/docbobo/roon-extension-arcam.git"
+    }
+},
+{
     "author": "Varun Randery",
     "display_name": "RESTful Roon Remote",
     "description": "Control Roon using HTTP GET requests from any device",
