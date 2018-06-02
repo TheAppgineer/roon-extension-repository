@@ -10,7 +10,7 @@ Community developed Roon Extensions can be added to this repository to allow ext
 
 ## Format of a repository entry
 
-The backbone behind the distribution is GitHub. An extension gets an entry in the global extension repository in json format. An entry contains the fields that are shown in the below example:
+The backbone behind the distribution is npm. An extension gets an entry in the global extension repository in json format. An entry contains the fields that are shown in the below example:
 
     {
       "author": "The Appgineer",
@@ -22,4 +22,26 @@ The backbone behind the distribution is GitHub. An extension gets an entry in th
       }
     }
 
-The first three fields are shown to the user by an extension installer, the last one is used to access the git repository of the extension. When the repository is cloned the current version can be read from the 'package.json' file that should be in the root of the repository. Updates can be automatic and do not require an update of the above information.
+The first three fields are shown to the user by an extension installer, the last one is used to install the extension. Updates can be automatic and do not require an update of the above information.
+
+## Format of a repository category
+
+Version 0.2.0 of the repository layout introduces the concept of categories. A category groups repository entries that have a similar function.
+
+A category is shown in the below example:
+
+    "display_name": "Device Control",
+    "extensions": [{
+            <entry 1>
+        },
+        {
+            <entry 2>
+        }
+    }
+
+The display_name specifies the name of the category and the extensions array countains the entries of the category.
+
+### backwards compatibility
+To be backwards compatible with the old (0.1.0) layout a category should have an empty repository field:
+
+    "repository": { "url": "" }
