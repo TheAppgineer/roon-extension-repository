@@ -39,7 +39,7 @@ A category is shown in the below example:
         }
     }
 
-The display_name specifies the name of the category and the extensions array countains the entries of the category.
+The display_name specifies the name of the category and the extensions array contains the entries of the category.
 
 ### backwards compatibility
 To be backwards compatible with the old (0.1.0) layout a category should have an empty repository field:

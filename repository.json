@@ -48,6 +48,15 @@
             "type": "git",
             "url": "https://github.com/docbobo/roon-extension-arcam.git"
         }
+    },
+    {
+        "author": "Boris Schaedler",
+        "display_name": "Rotel Amps (IP Control)",
+        "description": "Roon Volume/Source Control Extension to control Rotel amps via network",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/bsc101/roon-extension-rotel.git"
+        }
     }],
     "repository": { "url": "" }
 },
