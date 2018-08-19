@@ -89,14 +89,11 @@
           "type": "git",
           "url": "https://github.com/varunrandery/roon-remote.git"
         }
-      }
-    ],
-    "repository": {
-      "url": ""
-    }
-  },
+    }],
+    "repository": { "url": "" }
+},
   {
-    "display_name": "Discord Rich Presence",
+    "display_name": "Now Playing",
     "extensions": [
       {
         "author": "615283 (James Conway)",
@@ -111,5 +108,4 @@
     "repository": {
       "url": ""
     }
-  }
-]
+  }]
