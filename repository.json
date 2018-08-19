@@ -81,4 +81,21 @@
         }
     }],
     "repository": { "url": "" }
-}]
+},
+  {
+    "display_name": "Now Playing",
+    "extensions": [
+      {
+        "author": "615283 (James Conway)",
+        "display_name": "Discord Rich Presence",
+        "description": "Roon Extension to show in Discord Rich Presence what you are listening to",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/615283/roon-discord-rp.git"
+        }
+      }
+    ],
+    "repository": {
+      "url": ""
+    }
+  }]
