@@ -17,7 +17,7 @@
             "type": "git",
             "url": "https://github.com/TheAppgineer/roon-extension-random-radio.git"
         }
-      }],
+    }],
     "repository": { "url": "" }
 },
 {
@@ -59,8 +59,8 @@
         }
     }],
     "repository": { "url": "" }
-  },
-  {
+},
+{
     "display_name": "Web / Connectivity",
     "extensions": [{
         "author": "Mike Plugge",
