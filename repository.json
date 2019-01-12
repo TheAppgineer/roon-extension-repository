@@ -86,7 +86,7 @@
     "display_name": "Now Playing",
     "extensions": [
       {
-        "author": "615283 (James Conway)",
+        "author": "James Conway",
         "display_name": "Discord Rich Presence",
         "description": "Roon Extension to show in Discord Rich Presence what you are listening to",
         "repository": {
