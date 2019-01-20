@@ -7,6 +7,30 @@
         "repository": {
             "type": "git",
             "url": "https://github.com/TheAppgineer/roon-extension-alarm-clock.git"
+        },
+        "image": {
+            "repo": "theappgineer/roon-extension-alarm-clock",
+            "tags": {
+                "amd64": "amd64",
+                "arm": "arm32v6"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ],
+            "options": {
+                "env": {
+                    "TZ": "Time Zone"
+                }
+            },
+            "config": {
+                "HostConfig": {
+                    "NetworkMode": "host",
+                    "RestartPolicy": {
+                        "Name": "unless-stopped",
+                        "MaximumRetryCount": 0
+                    }
+                }
+            }
         }
     },
     {
