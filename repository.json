@@ -81,6 +81,35 @@
             "type": "git",
             "url": "https://github.com/bsc101/roon-extension-rotel.git"
         }
+    },
+    {
+        "author": "Roon Labs, LLC",
+        "packager": "The Appgineer",
+        "display_name": "Meridian Volume/Source Control",
+        "description": "Roon extension for source and volume control of Meridian systems\nthat are not driven by Sooloos endpoints",
+        "image": {
+            "repo": "theappgineer/roon-extension-meridian",
+            "tags": {
+                "amd64": "amd64"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ],
+            "options": {
+                "devices": [
+                    "Device Path"
+                ]
+            },
+            "config": {
+                "HostConfig": {
+                    "NetworkMode": "host",
+                    "RestartPolicy": {
+                        "Name": "unless-stopped",
+                        "MaximumRetryCount": 0
+                    }
+                }
+            }
+        }
     }],
     "repository": { "url": "" }
 },
