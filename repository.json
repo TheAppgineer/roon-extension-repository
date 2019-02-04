@@ -110,6 +110,59 @@
                 }
             }
         }
+    },
+    {
+        "author": "Roon Labs, LLC",
+        "packager": "The Appgineer",
+        "display_name": "Griffin Powermate",
+        "description": "Griffin Powermate USB controller",
+        "image": {
+            "repo": "theappgineer/roon-extension-powermate",
+            "tags": {
+                "amd64": "amd64",
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ],
+            "options": {
+                "devices": [
+                    "Device Path"
+                ]
+            },
+            "config": {
+                "HostConfig": {
+                    "NetworkMode": "host",
+                    "RestartPolicy": {
+                        "Name": "unless-stopped",
+                        "MaximumRetryCount": 0
+                    }
+                }
+            }
+        }
+    },
+    {
+        "author": "Roon Labs, LLC",
+        "packager": "The Appgineer",
+        "display_name": "iPort Surface Mount with Buttons controller",
+        "description": "Roon Extension to let the iPort Surface Mount with Buttons control Roon",
+        "image": {
+            "repo": "theappgineer/roon-extension-iport-sm-buttons",
+            "tags": {
+                "amd64": "amd64"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ],
+            "config": {
+                "HostConfig": {
+                    "NetworkMode": "host",
+                    "RestartPolicy": {
+                        "Name": "unless-stopped",
+                        "MaximumRetryCount": 0
+                    }
+                }
+            }
+        }
     }],
     "repository": { "url": "" }
 },
