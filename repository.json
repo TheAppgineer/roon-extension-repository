@@ -119,7 +119,7 @@
         "image": {
             "repo": "theappgineer/roon-extension-powermate",
             "tags": {
-                "amd64": "amd64",
+                "amd64": "amd64"
             },
             "binds": [
                 "/usr/src/app/config.json"
