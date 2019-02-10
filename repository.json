@@ -90,7 +90,8 @@
         "image": {
             "repo": "theappgineer/roon-extension-meridian",
             "tags": {
-                "amd64": "amd64"
+                "amd64": "amd64",
+                "arm": "arm32v6"
             },
             "binds": [
                 "/usr/src/app/config.json"
@@ -119,7 +120,8 @@
         "image": {
             "repo": "theappgineer/roon-extension-powermate",
             "tags": {
-                "amd64": "amd64"
+                "amd64": "amd64",
+                "arm": "arm32v6"
             },
             "binds": [
                 "/usr/src/app/config.json"
@@ -148,7 +150,8 @@
         "image": {
             "repo": "theappgineer/roon-extension-iport-sm-buttons",
             "tags": {
-                "amd64": "amd64"
+                "amd64": "amd64",
+                "arm": "arm32v6"
             },
             "binds": [
                 "/usr/src/app/config.json"
