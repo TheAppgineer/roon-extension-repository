@@ -147,6 +147,10 @@
         "packager": "The Appgineer",
         "display_name": "iPort Surface Mount with Buttons",
         "description": "Roon Extension to let the iPort Surface Mount with Buttons control Roon",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/RoonLabs/roon-extension-iport-sm-buttons.git"
+        },
         "image": {
             "repo": "theappgineer/roon-extension-iport-sm-buttons",
             "tags": {
