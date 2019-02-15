@@ -21,15 +21,6 @@
                 "env": {
                     "TZ": "Time Zone"
                 }
-            },
-            "config": {
-                "HostConfig": {
-                    "NetworkMode": "host",
-                    "RestartPolicy": {
-                        "Name": "unless-stopped",
-                        "MaximumRetryCount": 0
-                    }
-                }
             }
         }
     },
@@ -100,15 +91,6 @@
                 "devices": [
                     "Device Path"
                 ]
-            },
-            "config": {
-                "HostConfig": {
-                    "NetworkMode": "host",
-                    "RestartPolicy": {
-                        "Name": "unless-stopped",
-                        "MaximumRetryCount": 0
-                    }
-                }
             }
         }
     },
@@ -130,15 +112,6 @@
                 "devices": [
                     "Device Path"
                 ]
-            },
-            "config": {
-                "HostConfig": {
-                    "NetworkMode": "host",
-                    "RestartPolicy": {
-                        "Name": "unless-stopped",
-                        "MaximumRetryCount": 0
-                    }
-                }
             }
         }
     },
@@ -159,16 +132,7 @@
             },
             "binds": [
                 "/usr/src/app/config.json"
-            ],
-            "config": {
-                "HostConfig": {
-                    "NetworkMode": "host",
-                    "RestartPolicy": {
-                        "Name": "unless-stopped",
-                        "MaximumRetryCount": 0
-                    }
-                }
-            }
+            ]
         }
     }],
     "repository": { "url": "" }
