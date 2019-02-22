@@ -46,13 +46,7 @@ Extensions that are not distributable via npm can use a Docker image as an alter
             ]
         },
         "config": {
-            "HostConfig": {
-                "NetworkMode": "host",
-                "RestartPolicy": {
-                    "Name": "unless-stopped",
-                    "MaximumRetryCount": 0
-                }
-            }
+            ...
         }
     }
 
