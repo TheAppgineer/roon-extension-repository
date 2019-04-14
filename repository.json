@@ -89,7 +89,7 @@
             ],
             "options": {
                 "devices": [
-                    "Device Path"
+                    ":Serial Device Path"
                 ]
             }
         }
@@ -110,7 +110,7 @@
             ],
             "options": {
                 "devices": [
-                    "Device Path"
+                    ":USB Device Path"
                 ]
             }
         }
@@ -168,6 +168,45 @@
         "repository": {
             "type": "git",
             "url": "https://github.com/fjgalesloot/roon-extension-mqtt.git"
+        }
+    }],
+    "repository": { "url": "" }
+},
+{
+    "display_name": "Tools",
+    "extensions": [{
+        "author": "The Appgineer",
+        "display_name": "CD Ripper",
+        "description": "Extension that adds a CD ripper to your Roon system",
+        "image": {
+            "repo": "theappgineer/roon-extension-cd-ripper",
+            "tags": {
+                "amd64": "amd64",
+                "arm": "arm32v6"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "options": {
+                "devices": [
+                    "/dev/cdrom:Optical Drive Path"
+                ],
+                "binds": [
+                    "/home/worker/music:Local Music Share (optional)"
+                ]
+            },
+            "config": {
+                "Volumes": {
+                    "/home/worker/.config/whipper": {},
+                    "/output": {}
+                },
+                "HostConfig": {
+                    "Binds": [
+                        "whipper:/home/worker/.config/whipper",
+                        "staging:/output"
+                    ]
+                }
+            }
         }
     }],
     "repository": { "url": "" }
