@@ -192,6 +192,7 @@
                     "/dev/cdrom:Optical Drive Path"
                 ],
                 "binds": [
+                    "/dev/cdrom:Repeat Optical Drive Path",
                     "/home/worker/music:Local Music Share (optional)"
                 ]
             },
