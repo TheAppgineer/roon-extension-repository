@@ -192,18 +192,17 @@
                     "/dev/cdrom:Optical Drive Path"
                 ],
                 "binds": [
-                    "/dev/cdrom:Repeat Optical Drive Path",
                     "/home/worker/music:Local Music Share (optional)"
                 ]
             },
             "config": {
                 "Volumes": {
-                    "/home/worker/.config/whipper": {},
+                    "/root/.config/whipper": {},
                     "/output": {}
                 },
                 "HostConfig": {
                     "Binds": [
-                        "whipper:/home/worker/.config/whipper",
+                        "whipper:/root/.config/whipper",
                         "staging:/output"
                     ]
                 }

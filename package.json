@@ -1,6 +1,6 @@
 {
     "name": "roon-extension-repository",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Repository of (community developed) Roon Extensions",
     "author": "The Appgineer",
     "repository": {
