@@ -75,6 +75,15 @@
     },
     {
         "author": "Roon Labs, LLC",
+        "display_name": "Devialet Phantom Volume Control",
+        "description": "Roon Volume Control Extension for Devialet Phantom (Requires UPnP Enabled in Spark App)",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/RoonLabs/roon-extension-devialet-phantom-volume.git"
+        }
+    },
+    {
+        "author": "Roon Labs, LLC",
         "packager": "The Appgineer",
         "display_name": "Meridian Volume/Source Control",
         "description": "Roon extension for source and volume control of Meridian systems\nthat are not driven by Sooloos endpoints",
