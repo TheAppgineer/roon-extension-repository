@@ -32,6 +32,29 @@
             "type": "git",
             "url": "https://github.com/TheAppgineer/roon-extension-random-radio.git"
         }
+    },
+    {
+        "author": "The Appgineer",
+        "display_name": "CD Player",
+        "description": "Extension that adds a CD player to your Roon system",
+        "image": {
+            "repo": "theappgineer/roon-extension-cd-player",
+            "tags": {
+                "amd64": "amd64",
+                "arm": "arm32v6"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "options": {
+                "devices": [
+                    "/dev/cdrom:Optical Drive Path"
+                ],
+                "env": {
+                    "CDROM_GROUP": "cdrom group ID (default 24)"
+                }
+            }
+        }
     }],
     "repository": { "url": "" }
 },
