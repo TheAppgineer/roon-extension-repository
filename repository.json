@@ -62,15 +62,6 @@
     "display_name": "Device Control",
     "extensions": [{
         "author": "Doc Bobo",
-        "display_name": "Logitech Harmony",
-        "description": "Roon Source Control Extension to control Logitech Harmony activities",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/docbobo/roon-extension-harmony.git"
-        }
-    },
-    {
-        "author": "Doc Bobo",
         "display_name": "Denon/Marantz AVR",
         "description": "Roon Volume Control Extension for Denon/Marantz AV receivers",
         "repository": {
@@ -120,6 +111,59 @@
     {
         "author": "Roon Labs, LLC",
         "packager": "The Appgineer",
+        "display_name": "Devialet Phantom Volume Control",
+        "description": "Roon Extension to let Roon control the Devialet Phantom Premier's\nvolume via UPnP",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/RoonLabs/roon-extension-devialet-phantom-volume.git"
+        },
+        "image": {
+            "repo": "theappgineer/roon-extension-devialet-phantom-volume",
+            "tags": {
+                "amd64": "amd64",
+                "arm": "arm32v6"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ]
+        }
+    }],
+    "repository": { "url": "" }
+},
+{
+    "display_name": "Remote Control",
+    "extensions": [{
+        "author": "Doc Bobo",
+        "display_name": "Logitech Harmony",
+        "description": "Roon Source Control Extension to control Logitech Harmony activities",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/docbobo/roon-extension-harmony.git"
+        }
+    },
+    {
+        "author": "Khazul",
+        "display_name": "Deep Harmony",
+        "description": "A Roon Extension for Logitech Harmony",
+        "image": {
+            "repo": "khazul/roon-extension-deep-harmony",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "config": {
+                "Volumes": {
+                    "/usr/src/app": {}
+                },
+                "HostConfig": {
+                    "Binds": [ "deep-harmony-app:/usr/src/app" ]
+                }
+            }
+        }
+    },
+    {
+        "author": "Roon Labs, LLC",
+        "packager": "The Appgineer",
         "display_name": "Griffin Powermate",
         "description": "Griffin Powermate USB controller",
         "image": {
@@ -149,26 +193,6 @@
         },
         "image": {
             "repo": "theappgineer/roon-extension-iport-sm-buttons",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ]
-        }
-    },
-    {
-        "author": "Roon Labs, LLC",
-        "packager": "The Appgineer",
-        "display_name": "Devialet Phantom Volume Control",
-        "description": "Roon Extension to let Roon control the Devialet Phantom Premier's\nvolume via UPnP",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/RoonLabs/roon-extension-devialet-phantom-volume.git"
-        },
-        "image": {
-            "repo": "theappgineer/roon-extension-devialet-phantom-volume",
             "tags": {
                 "amd64": "amd64",
                 "arm": "arm32v6"
