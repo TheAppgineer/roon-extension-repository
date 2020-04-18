@@ -243,6 +243,15 @@
     "display_name": "Tools",
     "extensions": [{
         "author": "The Appgineer",
+        "display_name": "Art Scraper",
+        "description": "Roon Extension to scrape cover art images from your library",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/TheAppgineer/roon-extension-art-scraper.git"
+        }
+    },
+    {
+        "author": "The Appgineer",
         "display_name": "CD Ripper",
         "description": "Extension that adds a CD ripper to your Roon system",
         "image": {
