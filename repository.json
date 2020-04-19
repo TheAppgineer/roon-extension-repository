@@ -223,6 +223,15 @@
             "type": "git",
             "url": "https://github.com/varunrandery/roon-remote.git"
         }
+    },
+    {
+        "author": "David 'Nugget' McNett",
+        "display_name": "Community DJ",
+        "description": "Synchronize playback among multiple Roon Cores",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/nugget/roon-community-dj.git"
+        }
     }],
     "repository": { "url": "" }
 },
