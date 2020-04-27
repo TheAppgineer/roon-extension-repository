@@ -26,6 +26,15 @@
     },
     {
         "author": "The Appgineer",
+        "display_name": "Queue Bot",
+        "description": "Roon Extension that lets the queue take control",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/TheAppgineer/roon-extension-queue-bot.git"
+        }
+    },
+    {
+        "author": "The Appgineer",
         "display_name": "Random Radio",
         "description": "Roon Extension to play random tracks or albums",
         "repository": {
