@@ -97,6 +97,15 @@
         }
     },
     {
+        "author": "Marcel van der Veldt",
+        "display_name": "Onkyo/Pioneer AVR",
+        "description": "Volume Control extension to control Onkyo/Pioneer AV receivers\nvia network",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/marcelveldt/roon-extension-onkyo.git"
+        }
+    },
+    {
         "author": "Roon Labs, LLC",
         "packager": "The Appgineer",
         "display_name": "Meridian Volume/Source Control",
