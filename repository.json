@@ -43,6 +43,15 @@
         }
     },
     {
+        "author": "Boris Schaedler",
+        "display_name": "it'roXs!",
+        "description": "Roon Extension for Android App it'roXs!",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/bsc101/roon-extension-itroxs.git"
+        }
+    },
+    {
         "author": "The Appgineer",
         "display_name": "CD Player",
         "description": "Extension that adds a CD player to your Roon system",
