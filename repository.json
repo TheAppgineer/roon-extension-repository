@@ -154,6 +154,25 @@
                 "/usr/src/app/config.json"
             ]
         }
+    },
+    {
+        "author": "The Appgineer",
+        "display_name": "TAG McLaren Audio Source Control",
+        "description": "Roon extension for source control of TAG McLaren Audio devices",
+        "image": {
+            "repo": "theappgineer/roon-extension-tag-mclaren",
+            "tags": {
+                "arm": "latest"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ],
+            "options": {
+                "devices": [
+                    ":Serial Device Path"
+                ]
+            }
+        }
     }],
     "repository": { "url": "" }
 },
