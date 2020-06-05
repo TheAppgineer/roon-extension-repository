@@ -11,8 +11,8 @@
         "image": {
             "repo": "theappgineer/roon-extension-alarm-clock",
             "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
+                "amd64": "latest",
+                "arm": "latest"
             },
             "binds": [
                 "/usr/src/app/config.json"
