@@ -316,7 +316,8 @@
                 "arm": "latest"
             },
             "binds": [
-                "/home/worker/config.json"
+                "/home/worker/config.json",
+                "/root/inserted"
             ],
             "options": {
                 "devices": [
