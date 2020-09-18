@@ -282,6 +282,76 @@
     "repository": { "url": "" }
 },
 {
+    "display_name": "Entrypoints",
+    "extensions": [{
+        "author": "The Appgineer",
+        "display_name": "Entrypoint Gateway",
+        "description": "The gateway between all your Entrypoints and your Roon system",
+        "image": {
+            "repo": "theappgineer/entrypoint-gateway",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "options": {
+                "env": {
+                    "TZ": "Time Zone"
+                }
+            }
+        }
+    },
+    {
+        "author": "The Appgineer",
+        "display_name": "Audio Entrypoint",
+        "description": "An Entrypoint that lets Audio enter into your Roon system",
+        "image": {
+            "repo": "theappgineer/entrypoint-audio",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "config": {
+                "HostConfig": {
+                    "Devices": [{
+                        "PathOnHost": "/dev/snd",
+                        "PathInContainer": "/dev/snd",
+                        "CgroupPermissions": "rwm"
+                    }]
+                }
+            }
+        }
+    },
+    {
+        "author": "The Appgineer",
+        "display_name": "CD Entrypoint",
+        "description": "An Entrypoint that lets CD Audio enter into your Roon system",
+        "image": {
+            "repo": "theappgineer/entrypoint-cd-audio",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "options": {
+                "devices": [
+                    "/dev/cdrom:Optical Drive Path"
+                ],
+                "env": {
+                    "CDROM_GROUP": "cdrom group ID (default 24)"
+                }
+            }
+        }
+    }]
+},
+{
     "display_name": "Automation",
     "extensions": [{
         "author": "Floris Jan Galesloot",
