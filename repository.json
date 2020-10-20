@@ -356,7 +356,7 @@
     "extensions": [{
         "author": "Floris Jan Galesloot",
         "display_name": "MQTT Extension",
-        "description": "Extension to integrate Roon with home automation system using the MQTT protocol",
+        "description": "Integrate Roon into your home automation system using the MQTT protocol",
         "repository": {
             "type": "git",
             "url": "https://github.com/fjgalesloot/roon-extension-mqtt.git"
