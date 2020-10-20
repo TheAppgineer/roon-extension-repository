@@ -356,10 +356,24 @@
     "extensions": [{
         "author": "Floris Jan Galesloot",
         "display_name": "MQTT Extension",
-        "description": "Extension to publish Roon status to MQTT Broker",
+        "description": "Extension to integrate Roon with home automation system using the MQTT protocol",
         "repository": {
             "type": "git",
             "url": "https://github.com/fjgalesloot/roon-extension-mqtt.git"
+            "image": {
+                "repo": "fjgalesloot/roon-extension-mqtt",
+                "tags": {
+                    "amd64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config/config.json"
+                ],	
+                "options": {
+                    "binds": [
+                        "/usr/src/app/config/ca.pem:Local CA Certificate file"
+                    ]
+                }
+            }
         }
     }],
     "repository": { "url": "" }
