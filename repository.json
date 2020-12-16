@@ -370,7 +370,7 @@
                 ],	
                 "options": {
                     "binds": [
-                        "/usr/src/app/config/ca.pem:Local CA Certificate file"
+                        "/usr/src/app/config/:Config folder"
                     ]
                 }
             }
