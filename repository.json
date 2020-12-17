@@ -329,6 +329,31 @@
     },
     {
         "author": "The Appgineer",
+        "display_name": "BT Entrypoint",
+        "description": "An Entrypoint that lets Bluetooth Audio enter into your Roon system",
+        "image": {
+            "repo": "theappgineer/entrypoint-bluetooth",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "binds": [
+                "/home/worker/config.json"
+            ],
+            "config": {
+                "HostConfig": {
+                    "Binds": [
+                        "/var/run/dbus:/var/run/dbus",
+                        "/sys/class/bluetooth:/sys/class/bluetooth",
+                        "/var/lib/bluetooth:/var/lib/bluetooth"
+                    ],
+                    "Privileged": true
+                }
+            }
+        }
+    },
+    {
+        "author": "The Appgineer",
         "display_name": "CD Entrypoint",
         "description": "An Entrypoint that lets CD Audio enter into your Roon system",
         "image": {
@@ -360,19 +385,19 @@
         "repository": {
             "type": "git",
             "url": "https://github.com/fjgalesloot/roon-extension-mqtt.git"
-            "image": {
-                "repo": "fjgalesloot/roon-extension-mqtt",
-                "tags": {
-                    "amd64": "latest"
-                },
+        },
+        "image": {
+            "repo": "fjgalesloot/roon-extension-mqtt",
+            "tags": {
+                "amd64": "latest"
+            },
+            "binds": [
+                "/usr/src/app/config/config.json"
+            ],
+            "options": {
                 "binds": [
-                    "/usr/src/app/config/config.json"
-                ],	
-                "options": {
-                    "binds": [
-                        "/usr/src/app/config/:Config folder"
-                    ]
-                }
+                    "/usr/src/app/config/:Config folder"
+                ]
             }
         }
     }],
