@@ -4,10 +4,6 @@
         "author": "The Appgineer",
         "display_name": "Alarm Clock",
         "description": "Roon Extension to start or stop playback on a specific zone at a specific time",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/TheAppgineer/roon-extension-alarm-clock.git"
-        },
         "image": {
             "repo": "theappgineer/roon-extension-alarm-clock",
             "tags": {
@@ -22,33 +18,6 @@
                     "TZ": "Time Zone"
                 }
             }
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "Queue Bot",
-        "description": "Roon Extension that lets the queue take control",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/TheAppgineer/roon-extension-queue-bot.git"
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "Random Radio",
-        "description": "Roon Extension to play random tracks or albums",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/TheAppgineer/roon-extension-random-radio.git"
-        }
-    },
-    {
-        "author": "Boris Schaedler",
-        "display_name": "it'roXs!",
-        "description": "Roon Extension for Android App it'roXs!",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/bsc101/roon-extension-itroxs.git"
         }
     },
     {
@@ -73,48 +42,11 @@
                 }
             }
         }
-    }],
-    "repository": { "url": "" }
+    }]
 },
 {
     "display_name": "Device Control",
     "extensions": [{
-        "author": "Doc Bobo",
-        "display_name": "Denon/Marantz AVR",
-        "description": "Roon Volume Control Extension for Denon/Marantz AV receivers",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/docbobo/roon-extension-denon.git"
-        }
-    },
-    {
-        "author": "Doc Bobo",
-        "display_name": "Arcam AVR390/550/850/AV860/SR250",
-        "description": "Roon Volume Control Extension for Arcam AVR390/550/850/AV860/SR250 receivers",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/docbobo/roon-extension-arcam.git"
-        }
-    },
-    {
-        "author": "Boris Schaedler",
-        "display_name": "Rotel Amps (IP Control)",
-        "description": "Roon Volume/Source Control Extension to control Rotel amps via network",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/bsc101/roon-extension-rotel.git"
-        }
-    },
-    {
-        "author": "Marcel van der Veldt",
-        "display_name": "Onkyo/Pioneer AVR",
-        "description": "Volume Control extension to control Onkyo/Pioneer AV receivers\nvia network",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/marcelveldt/roon-extension-onkyo.git"
-        }
-    },
-    {
         "author": "Roon Labs, LLC",
         "packager": "The Appgineer",
         "display_name": "Meridian Volume/Source Control",
@@ -140,10 +72,6 @@
         "packager": "The Appgineer",
         "display_name": "Devialet Phantom Volume Control",
         "description": "Roon Extension to let Roon control the Devialet Phantom Premier's\nvolume via UPnP",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/RoonLabs/roon-extension-devialet-phantom-volume.git"
-        },
         "image": {
             "repo": "theappgineer/roon-extension-devialet-phantom-volume",
             "tags": {
@@ -173,21 +101,11 @@
                 ]
             }
         }
-    }],
-    "repository": { "url": "" }
+    }]
 },
 {
     "display_name": "Remote Control",
     "extensions": [{
-        "author": "Doc Bobo",
-        "display_name": "Logitech Harmony",
-        "description": "Roon Source Control Extension to control Logitech Harmony activities",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/docbobo/roon-extension-harmony.git"
-        }
-    },
-    {
         "author": "Khazul",
         "display_name": "Deep Harmony",
         "description": "A Roon Extension for Logitech Harmony",
@@ -233,10 +151,6 @@
         "packager": "The Appgineer",
         "display_name": "iPort Surface Mount with Buttons",
         "description": "Roon Extension to let the iPort Surface Mount with Buttons control Roon",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/RoonLabs/roon-extension-iport-sm-buttons.git"
-        },
         "image": {
             "repo": "theappgineer/roon-extension-iport-sm-buttons",
             "tags": {
@@ -247,39 +161,7 @@
                 "/usr/src/app/config.json"
             ]
         }
-    }],
-    "repository": { "url": "" }
-},
-{
-    "display_name": "Web / Connectivity",
-    "extensions": [{
-        "author": "Mike Plugge",
-        "display_name": "Web Controller",
-        "description": "Roon Extension which provides a web interface based remote",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/pluggemi/roon-web-controller.git"
-        }
-    },
-    {
-        "author": "Varun Randery",
-        "display_name": "RESTful Roon Remote",
-        "description": "Control Roon using HTTP GET requests from any device",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/varunrandery/roon-remote.git"
-        }
-    },
-    {
-        "author": "David 'Nugget' McNett",
-        "display_name": "Community DJ",
-        "description": "Synchronize playback among multiple Roon Cores",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/nugget/roon-community-dj.git"
-        }
-    }],
-    "repository": { "url": "" }
+    }]
 },
 {
     "display_name": "Entrypoints",
@@ -382,10 +264,6 @@
         "author": "Floris Jan Galesloot",
         "display_name": "MQTT Extension",
         "description": "Integrate Roon into your home automation system using the MQTT protocol",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/fjgalesloot/roon-extension-mqtt.git"
-        },
         "image": {
             "repo": "fjgalesloot/roon-extension-mqtt",
             "tags": {
@@ -400,21 +278,11 @@
                 ]
             }
         }
-    }],
-    "repository": { "url": "" }
+    }]
 },
 {
     "display_name": "Tools",
     "extensions": [{
-        "author": "The Appgineer",
-        "display_name": "Art Scraper",
-        "description": "Roon Extension to scrape cover art images from your library",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/TheAppgineer/roon-extension-art-scraper.git"
-        }
-    },
-    {
         "author": "The Appgineer",
         "display_name": "CD Ripper",
         "description": "Extension that adds a CD ripper to your Roon system",
@@ -449,6 +317,5 @@
                 }
             }
         }
-    }],
-    "repository": { "url": "" }
+    }]
 }]
