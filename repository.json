@@ -1,321 +1,301 @@
-[{
-    "display_name": "Playback",
-    "extensions": [{
-        "author": "The Appgineer",
-        "display_name": "Alarm Clock",
-        "description": "Roon Extension to start or stop playback on a specific zone at a specific time",
-        "image": {
-            "repo": "theappgineer/roon-extension-alarm-clock",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ],
-            "options": {
-                "env": {
-                    "TZ": "Time Zone"
-                }
-            }
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "CD Player",
-        "description": "Extension that adds a CD player to your Roon system",
-        "image": {
-            "repo": "theappgineer/roon-extension-cd-player",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/home/worker/config.json"
-            ],
-            "options": {
-                "devices": [
-                    "/dev/cdrom:Optical Drive Path"
-                ],
-                "env": {
-                    "CDROM_GROUP": "cdrom group ID (default 24)"
-                }
-            }
-        }
-    }]
-},
 {
-    "display_name": "Device Control",
-    "extensions": [{
-        "author": "Roon Labs, LLC",
-        "packager": "The Appgineer",
-        "display_name": "Meridian Volume/Source Control",
-        "description": "Roon extension for source and volume control of Meridian systems\nthat are not driven by Sooloos endpoints",
-        "image": {
-            "repo": "theappgineer/roon-extension-meridian",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ],
-            "options": {
-                "devices": [
-                    ":Serial Device Path"
-                ]
-            }
-        }
-    },
-    {
-        "author": "Roon Labs, LLC",
-        "packager": "The Appgineer",
-        "display_name": "Devialet Phantom Volume Control",
-        "description": "Roon Extension to let Roon control the Devialet Phantom Premier's\nvolume via UPnP",
-        "image": {
-            "repo": "theappgineer/roon-extension-devialet-phantom-volume",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ]
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "TAG McLaren Audio Source Control",
-        "description": "Roon extension for source control of TAG McLaren Audio devices",
-        "image": {
-            "repo": "theappgineer/roon-extension-tag-mclaren",
-            "tags": {
-                "arm": "latest"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ],
-            "options": {
-                "devices": [
-                    ":Serial Device Path"
-                ]
-            }
-        }
-    }]
-},
-{
-    "display_name": "Remote Control",
-    "extensions": [{
-        "author": "Khazul",
-        "display_name": "Deep Harmony",
-        "description": "A Roon Extension for Logitech Harmony",
-        "image": {
-            "repo": "khazul/roon-extension-deep-harmony",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "config": {
-                "Volumes": {
-                    "/usr/src/app": {}
+    "version": "1.0.0",
+    "categories": [{
+        "display_name": "Playback",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Alarm Clock",
+            "description": "Roon Extension to start or stop playback on a specific zone at a specific time",
+            "image": {
+                "repo": "theappgineer/roon-extension-alarm-clock",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
                 },
-                "HostConfig": {
-                    "Binds": [ "deep-harmony-app:/usr/src/app" ]
-                }
-            }
-        }
-    },
-    {
-        "author": "Roon Labs, LLC",
-        "packager": "The Appgineer",
-        "display_name": "Griffin Powermate",
-        "description": "Griffin Powermate USB controller",
-        "image": {
-            "repo": "theappgineer/roon-extension-powermate",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ],
-            "options": {
-                "devices": [
-                    ":USB Device Path"
-                ]
-            }
-        }
-    },
-    {
-        "author": "Roon Labs, LLC",
-        "packager": "The Appgineer",
-        "display_name": "iPort Surface Mount with Buttons",
-        "description": "Roon Extension to let the iPort Surface Mount with Buttons control Roon",
-        "image": {
-            "repo": "theappgineer/roon-extension-iport-sm-buttons",
-            "tags": {
-                "amd64": "amd64",
-                "arm": "arm32v6"
-            },
-            "binds": [
-                "/usr/src/app/config.json"
-            ]
-        }
-    }]
-},
-{
-    "display_name": "Entrypoints",
-    "extensions": [{
-        "author": "The Appgineer",
-        "display_name": "Entrypoint Gateway",
-        "description": "The gateway between all your Entrypoints and your Roon system",
-        "image": {
-            "repo": "theappgineer/entrypoint-gateway",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/home/worker/config.json"
-            ],
-            "options": {
-                "env": {
-                    "TZ": "Time Zone"
-                }
-            }
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "Audio Entrypoint",
-        "description": "An Entrypoint that lets Audio enter into your Roon system",
-        "image": {
-            "repo": "theappgineer/entrypoint-audio",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/home/worker/config.json"
-            ],
-            "config": {
-                "HostConfig": {
-                    "Devices": [{
-                        "PathOnHost": "/dev/snd",
-                        "PathInContainer": "/dev/snd",
-                        "CgroupPermissions": "rwm"
-                    }]
-                }
-            }
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "BT Entrypoint",
-        "description": "An Entrypoint that lets Bluetooth Audio enter into your Roon system",
-        "image": {
-            "repo": "theappgineer/entrypoint-bluetooth",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/home/worker/config.json"
-            ],
-            "config": {
-                "HostConfig": {
-                    "Binds": [
-                        "/var/run/dbus:/var/run/dbus",
-                        "/sys/class/bluetooth:/sys/class/bluetooth",
-                        "/var/lib/bluetooth:/var/lib/bluetooth"
-                    ],
-                    "Privileged": true
-                }
-            }
-        }
-    },
-    {
-        "author": "The Appgineer",
-        "display_name": "CD Entrypoint",
-        "description": "An Entrypoint that lets CD Audio enter into your Roon system",
-        "image": {
-            "repo": "theappgineer/entrypoint-cd-audio",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/home/worker/config.json"
-            ],
-            "options": {
-                "devices": [
-                    "/dev/cdrom:Optical Drive Path"
-                ],
-                "env": {
-                    "CDROM_GROUP": "cdrom group ID (default 24)"
-                }
-            }
-        }
-    }]
-},
-{
-    "display_name": "Automation",
-    "extensions": [{
-        "author": "Floris Jan Galesloot",
-        "display_name": "MQTT Extension",
-        "description": "Integrate Roon into your home automation system using the MQTT protocol",
-        "image": {
-            "repo": "fjgalesloot/roon-extension-mqtt",
-            "tags": {
-                "amd64": "latest"
-            },
-            "binds": [
-                "/usr/src/app/config/config.json"
-            ],
-            "options": {
                 "binds": [
-                    "/usr/src/app/config/:Config folder"
-                ]
-            }
-        }
-    }]
-},
-{
-    "display_name": "Tools",
-    "extensions": [{
-        "author": "The Appgineer",
-        "display_name": "CD Ripper",
-        "description": "Extension that adds a CD ripper to your Roon system",
-        "image": {
-            "repo": "theappgineer/roon-extension-cd-ripper",
-            "tags": {
-                "amd64": "latest",
-                "arm": "latest"
-            },
-            "binds": [
-                "/home/worker/config.json",
-                "/root/inserted"
-            ],
-            "options": {
-                "devices": [
-                    "/dev/cdrom:Optical Drive Path"
+                    "/usr/src/app/config.json"
                 ],
-                "binds": [
-                    "/root/music:Local Music Share (optional)"
-                ]
-            },
-            "config": {
-                "Volumes": {
-                    "/root/.config/whipper": {},
-                    "/output": {}
+                "options": {
+                    "env": {
+                        "TZ": "Time Zone"
+                    }
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Device Control",
+        "extensions": [{
+            "author": "Roon Labs, LLC",
+            "packager": "The Appgineer",
+            "display_name": "Meridian Volume/Source Control",
+            "description": "Roon extension for source and volume control of Meridian systems\nthat are not driven by Sooloos endpoints",
+            "image": {
+                "repo": "theappgineer/roon-extension-meridian",
+                "tags": {
+                    "amd64": "amd64",
+                    "arm": "arm32v6"
                 },
-                "HostConfig": {
-                    "Binds": [
-                        "whipper:/root/.config/whipper",
-                        "staging:/output"
+                "binds": [
+                    "/usr/src/app/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/ttyUSB0:Serial Device Path"
                     ]
                 }
             }
-        }
+        },
+        {
+            "author": "Roon Labs, LLC",
+            "packager": "The Appgineer",
+            "display_name": "Devialet Phantom Volume Control",
+            "description": "Roon Extension to let Roon control the Devialet Phantom Premier's\nvolume via UPnP",
+            "image": {
+                "repo": "theappgineer/roon-extension-devialet-phantom-volume",
+                "tags": {
+                    "amd64": "amd64",
+                    "arm": "arm32v6"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "TAG McLaren Audio Source Control",
+            "description": "Roon extension for source control of TAG McLaren Audio devices",
+            "image": {
+                "repo": "theappgineer/roon-extension-tag-mclaren",
+                "tags": {
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/ttyUSB0:Serial Device Path"
+                    ]
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Remote Control",
+        "extensions": [{
+            "author": "Khazul",
+            "display_name": "Deep Harmony",
+            "description": "A Roon Extension for Logitech Harmony",
+            "image": {
+                "repo": "khazul/roon-extension-deep-harmony",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "config": {
+                    "Volumes": {
+                        "/usr/src/app": {}
+                    },
+                    "HostConfig": {
+                        "Binds": [ "deep-harmony-app:/usr/src/app" ]
+                    }
+                }
+            }
+        },
+        {
+            "author": "Roon Labs, LLC",
+            "packager": "The Appgineer",
+            "display_name": "Griffin Powermate",
+            "description": "Griffin Powermate USB controller",
+            "image": {
+                "repo": "theappgineer/roon-extension-powermate",
+                "tags": {
+                    "amd64": "amd64",
+                    "arm": "arm32v6"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        ":USB Device Path"
+                    ]
+                }
+            }
+        },
+        {
+            "author": "Roon Labs, LLC",
+            "packager": "The Appgineer",
+            "display_name": "iPort Surface Mount with Buttons",
+            "description": "Roon Extension to let the iPort Surface Mount with Buttons control Roon",
+            "image": {
+                "repo": "theappgineer/roon-extension-iport-sm-buttons",
+                "tags": {
+                    "amd64": "amd64",
+                    "arm": "arm32v6"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
+            }
+        }]
+    },
+    {
+        "display_name": "Entrypoints",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Entrypoint Gateway",
+            "description": "The gateway between all your Entrypoints and your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-gateway",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "TZ": "Time Zone"
+                    }
+                }
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "Audio Entrypoint",
+            "description": "An Entrypoint that lets Audio enter into your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-audio",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ],
+                "config": {
+                    "HostConfig": {
+                        "Devices": [{
+                            "PathOnHost": "/dev/snd",
+                            "PathInContainer": "/dev/snd",
+                            "CgroupPermissions": "rwm"
+                        }]
+                    }
+                }
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "BT Entrypoint",
+            "description": "An Entrypoint that lets Bluetooth Audio enter into your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-bluetooth",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ],
+                "config": {
+                    "HostConfig": {
+                        "Binds": [
+                            "/var/run/dbus:/var/run/dbus",
+                            "/sys/class/bluetooth:/sys/class/bluetooth",
+                            "/var/lib/bluetooth:/var/lib/bluetooth"
+                        ],
+                        "Privileged": true
+                    }
+                }
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "CD Entrypoint",
+            "description": "An Entrypoint that lets CD Audio enter into your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-cd-audio",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/cdrom:Optical Drive Path"
+                    ],
+                    "env": {
+                        "CDROM_GROUP": "cdrom group ID (default 24)"
+                    }
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Automation",
+        "extensions": [{
+            "author": "Floris Jan Galesloot",
+            "display_name": "MQTT Extension",
+            "description": "Integrate Roon into your home automation system using the MQTT protocol",
+            "image": {
+                "repo": "fjgalesloot/roon-extension-mqtt",
+                "tags": {
+                    "amd64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config/config.json"
+                ],
+                "options": {
+                    "binds": [
+                        "/usr/src/app/config/:Config folder"
+                    ]
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Tools",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "CD Ripper",
+            "description": "Extension that adds a CD ripper to your Roon system",
+            "image": {
+                "repo": "theappgineer/roon-extension-cd-ripper",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json",
+                    "/root/inserted"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/cdrom:Optical Drive Path"
+                    ],
+                    "binds": [
+                        "/root/music:Local Music Share (optional)"
+                    ]
+                },
+                "config": {
+                    "Volumes": {
+                        "/root/.config/whipper": {},
+                        "/output": {}
+                    },
+                    "HostConfig": {
+                        "Binds": [
+                            "whipper:/root/.config/whipper",
+                            "staging:/output"
+                        ]
+                    }
+                }
+            }
+        }]
     }]
-}]
+}
