@@ -17,7 +17,7 @@
                 ],
                 "options": {
                     "env": {
-                        "TZ": "Time Zone"
+                        "TZ": ":Time Zone"
                     }
                 }
             }
@@ -159,7 +159,7 @@
                 ],
                 "options": {
                     "env": {
-                        "TZ": "Time Zone"
+                        "TZ": ":Time Zone"
                     }
                 }
             }
@@ -231,7 +231,7 @@
                         "/dev/cdrom:Optical Drive Path"
                     ],
                     "env": {
-                        "CDROM_GROUP": "cdrom group ID (default 24)"
+                        "CDROM_GROUP": "24:cdrom group ID"
                     }
                 }
             }
