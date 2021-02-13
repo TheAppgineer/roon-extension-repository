@@ -177,6 +177,11 @@
                 "binds": [
                     "/home/worker/config.json"
                 ],
+                "options": {
+                    "env": {
+                        "AUDIO_GROUP": "29:audio Group ID"
+                    }
+                },
                 "config": {
                     "HostConfig": {
                         "Devices": [{
@@ -231,7 +236,7 @@
                         "/dev/cdrom:Optical Drive Path"
                     ],
                     "env": {
-                        "CDROM_GROUP": "24:cdrom group ID"
+                        "CDROM_GROUP": "24:cdrom Group ID"
                     }
                 }
             }
