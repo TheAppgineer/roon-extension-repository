@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "categories": [{
         "display_name": "Playback",
         "extensions": [{
@@ -20,6 +20,36 @@
                         "TZ": ":Time Zone"
                     }
                 }
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "Queue Bot",
+            "description": "Roon Extension that lets the queue take control",
+            "image": {
+                "repo": "theappgineer/roon-extension-queue-bot",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ]
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "Random Radio",
+            "description": "Roon Extension to play random tracks or albums",
+            "image": {
+                "repo": "theappgineer/roon-extension-random-radio",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ]
             }
         }]
     },
