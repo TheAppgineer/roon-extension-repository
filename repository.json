@@ -1,6 +1,29 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "categories": [{
+        "display_name": "System",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Extension Snapshots",
+            "description": "Snapshots of npm-based Roon Extensions",
+            "image": {
+                "repo": "theappgineer/roon-extension-snapshots",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "config": {
+                    "Volumes": {
+                        "/home/node/.config": {}
+                    },
+                    "HostConfig": {
+                        "Binds": [ "snapshots-config:/home/node/.config" ]
+                    }
+                }
+            }
+        }]
+    },
+    {
         "display_name": "Playback",
         "extensions": [{
             "author": "The Appgineer",
