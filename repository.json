@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -320,6 +320,26 @@
     {
         "display_name": "Tools",
         "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Art Scraper",
+            "description": "Roon Extension to scrape cover art images from your library",
+            "image": {
+                "repo": "theappgineer/roon-extension-art-scraper",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ],
+                "options": {
+                    "binds": [
+                        "/home/node/art:Local Art Share"
+                    ]
+                }
+            }
+        },
+        {
             "author": "The Appgineer",
             "display_name": "CD Ripper",
             "description": "Extension that adds a CD ripper to your Roon system",
