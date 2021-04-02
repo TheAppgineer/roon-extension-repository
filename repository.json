@@ -1,5 +1,5 @@
 {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -224,7 +224,8 @@
                 "repo": "theappgineer/entrypoint-gateway",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/worker/config.json"
@@ -244,7 +245,8 @@
                 "repo": "theappgineer/entrypoint-audio",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/worker/config.json"
@@ -273,7 +275,8 @@
                 "repo": "theappgineer/entrypoint-bluetooth",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/worker/config.json"
@@ -298,7 +301,8 @@
                 "repo": "theappgineer/entrypoint-cd-audio",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/worker/config.json"
