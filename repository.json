@@ -1,5 +1,5 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -10,7 +10,8 @@
                 "repo": "theappgineer/roon-extension-snapshots",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "config": {
                     "Volumes": {
@@ -33,7 +34,8 @@
                 "repo": "theappgineer/roon-extension-alarm-clock",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/usr/src/app/config.json"
@@ -122,7 +124,9 @@
             "image": {
                 "repo": "theappgineer/roon-extension-tag-mclaren",
                 "tags": {
-                    "arm": "latest"
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/usr/src/app/config.json"
