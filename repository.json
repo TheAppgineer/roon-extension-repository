@@ -1,5 +1,5 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -55,7 +55,8 @@
                 "repo": "theappgineer/roon-extension-queue-bot",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/node/config.json"
@@ -70,7 +71,8 @@
                 "repo": "theappgineer/roon-extension-random-radio",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/node/config.json"
@@ -354,7 +356,8 @@
                 "repo": "theappgineer/roon-extension-art-scraper",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/node/config.json"
@@ -374,7 +377,8 @@
                 "repo": "theappgineer/roon-extension-cd-ripper",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest"
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/home/worker/config.json",
