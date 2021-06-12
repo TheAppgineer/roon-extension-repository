@@ -1,5 +1,5 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -69,6 +69,22 @@
             "description": "Roon Extension to play random tracks or albums",
             "image": {
                 "repo": "theappgineer/roon-extension-random-radio",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ]
+            }
+        },
+        {
+            "author": "Boris Schaedler",
+            "display_name": "it'roXs!",
+            "description": "Roon Extension for Android App it'roXs!",
+            "image": {
+                "repo": "bsc101/roon-extension-itroxs",
                 "tags": {
                     "amd64": "latest",
                     "arm": "latest",
