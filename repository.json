@@ -180,7 +180,7 @@
         "description": "Turn on/off Ikea Tradfri plug devices depending on zone state(playing / not playing)",
         "repository": {
             "type": "git",
-            "url": "git+https://github.com/HasseJohansen/roon-extension-ikea-tradfri.git#0.0.2"
+            "url": "git+https://github.com/HasseJohansen/roon-extension-ikea-tradfri.git#0.0.3"
         }
     }],
     "repository": { "url": "" }
