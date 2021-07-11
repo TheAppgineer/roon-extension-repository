@@ -155,6 +155,22 @@
                     ]
                 }
             }
+        },
+        {
+            "author": "Hasse Hagen Johansen",
+            "display_name": "Roon Tradfri",
+            "description": "Roon Extension to control an IKEA Tradfri Plug to turn power on/off depending on Roon Zone playing state",
+            "image": {
+		"repo": "hassejohansen/roon-extension-ikea-tradfri",
+		"tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+		},
+		"binds": [
+                    "/home/node/config.json"
+		]
+            }
         }]
     },
     {
