@@ -1,5 +1,5 @@
 {
-    "version": "1.0.8",
+    "version": "1.0.9",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -335,6 +335,30 @@
                     ],
                     "env": {
                         "CDROM_GROUP": "24:cdrom Group ID"
+                    }
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Social",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Sharoon",
+            "description": "Roon Extension that socializes \"now playing\"",
+            "image": {
+                "repo": "theappgineer/roon-extension-sharoon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "5501:Local Web Server Port"
                     }
                 }
             }
