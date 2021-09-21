@@ -1,5 +1,5 @@
 {
-    "version": "1.0.9",
+    "version": "1.0.10",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -373,7 +373,9 @@
             "image": {
                 "repo": "fjgalesloot/roon-extension-mqtt",
                 "tags": {
-                    "amd64": "latest"
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/usr/src/app/config/config.json"
