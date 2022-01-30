@@ -1,5 +1,5 @@
 {
-    "version": "1.0.10",
+    "version": "1.0.11",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -155,6 +155,27 @@
                     ]
                 }
             }
+        },
+        {
+            "author": "Guy Maurier",
+            "display_name": "Moon Volume/Source/Power Control",
+            "description": "Roon Extension to provide Roon control for Simaudio Moon devices via RS-232",
+            "image": {
+                "repo": "guymaurier/roon-extension-simaudio-moon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/ttyUSB0:Serial Device Path"
+                    ]
+                }
+            }
         }]
     },
     {
@@ -248,14 +269,6 @@
                     "amd64": "latest",
                     "arm": "latest",
                     "arm64": "latest"
-                },
-                "binds": [
-                    "/home/worker/config.json"
-                ],
-                "options": {
-                    "env": {
-                        "TZ": ":Time Zone"
-                    }
                 }
             }
         },
