@@ -1,5 +1,5 @@
 {
-    "version": "1.0.11",
+    "version": "1.0.12",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -350,6 +350,22 @@
                         "CDROM_GROUP": "24:cdrom Group ID"
                     }
                 }
+            }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "Librespot Entrypoint",
+            "description": "An Entrypoint that lets Spotify enter into your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-librespot",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ]
             }
         }]
     },
