@@ -1,5 +1,5 @@
 {
-    "version": "1.0.12",
+    "version": "1.0.13",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -286,18 +286,14 @@
                 "binds": [
                     "/home/worker/config.json"
                 ],
-                "options": {
-                    "env": {
-                        "AUDIO_GROUP": "29:audio Group ID"
-                    }
-                },
                 "config": {
                     "HostConfig": {
                         "Devices": [{
                             "PathOnHost": "/dev/snd",
                             "PathInContainer": "/dev/snd",
                             "CgroupPermissions": "rwm"
-                        }]
+                        }],
+                        "Privileged": true
                     }
                 }
             }
