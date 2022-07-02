@@ -94,6 +94,16 @@
         "repository": {
             "type": "git",
             "url": "https://github.com/docbobo/roon-extension-arcam.git"
+        },
+        "image": {
+            "repo": "docbobo/roon-extension-arcam",
+            "tags": {
+                "amd64": "latest",
+                "arm": "latest"
+            },
+            "binds": [
+                "/usr/src/app/config.json"
+            ]
         }
     },
     {
