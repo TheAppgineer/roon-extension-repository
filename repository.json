@@ -1,5 +1,5 @@
 {
-    "version": "1.0.13",
+    "version": "1.0.14",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -175,6 +175,22 @@
                         "/dev/ttyUSB0:Serial Device Path"
                     ]
                 }
+            }
+        },
+        {
+            "author": "Doc Bobo",
+            "display_name": "Arcam AVR390/550/850/AV860/SR250",
+            "description": "Roon Volume Control Extension for Arcam AVR390/550/850/AV860/SR250 receivers",
+            "image": {
+                "repo": "docbobo/roon-extension-arcam",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
             }
         }]
     },
