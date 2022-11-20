@@ -1,5 +1,5 @@
 {
-    "version": "1.0.14",
+    "version": "1.0.15",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -190,6 +190,22 @@
                 },
                 "binds": [
                     "/usr/src/app/config.json"
+                ]
+            }
+        },
+        {
+            "author": "Linvale",
+            "display_name": "Rheos",
+            "description": "Connect and Control Denon/Marantz Heos players from Roon",
+            "image": {
+                "repo": "rheos/roon-extension-rheos",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
                 ]
             }
         }]
