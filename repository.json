@@ -504,6 +504,22 @@
                     }
                 }
             }
+        },
+        {
+            "author": "ComputeQ UG",
+            "display_name": "Roomskills Local Connect for Roon",
+            "description": "Roon extension for Roomskills, a small app to connect Roomskill to Roon and allow Alexa voice control for Roon",
+            "image": {
+                "repo": "computequg/roomskills-rlc",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/mnt"
+                ]
+            }
         }]
     }]
 }
