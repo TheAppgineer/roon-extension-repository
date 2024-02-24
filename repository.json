@@ -1,5 +1,5 @@
 {
-    "version": "1.0.15",
+    "version": "1.0.16",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -285,6 +285,30 @@
                     "devices": [
                         "/dev/bus/usb/:USB Device Path"
                     ]
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Web / Connectivity",
+        "extensions": [{
+            "author": "Nihilux-Org",
+            "display_name": "Roon Web Stack",
+            "description": "An ensemble of tools to drive Roon from a web browser",
+            "image": {
+                "repo": "nihiluxorg/roon-web-stack",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "3000:Port",
+                        "LOG_LEVEL": "info:Log Level"
+                    }
                 }
             }
         }]
