@@ -467,6 +467,8 @@
         ],
         "options": {
             "env": {
+                "HOSTNAME": "0.0.0.0",
+                "PORT": 9010,
                 "OPENAI_KEY": "PASTE_YOUR_OPEN_AI_API_KEY_HERE"
             }
         }
