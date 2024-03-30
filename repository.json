@@ -73,6 +73,28 @@
                 }
             }
         }
+    },
+    {
+        "author": "jjdenherog",
+        "display_name": "AI Guest DJ",
+        "description": "Roon extension for AI Guest DJ, a web service that allows you to use AI to create playlists",
+        "image": {
+            "repo": "aiguestdj/roon-extension",
+            "tags": {
+                "amd64": "latest",
+                "arm64": "latest"
+            },
+            "binds": [
+                "/app/config/roon.json",
+                "/app/config/openai.json"
+            ],
+            "options": {
+                "env": {
+                    "PORT": "9010",
+                    "OPENAI_KEY": "YOUR_OPEN_AI_KEY"
+                }
+            }
+        }
     }],
     "repository": { "url": "" }
 },
@@ -451,26 +473,4 @@
         }
     }],
     "repository": { "url": "" }
-},
-{
-    "author": "jjdenherog",
-    "display_name": "AI Guest DJ",
-    "description": "Roon extension for AI Guest DJ, a web service that allows you to use AI to create playlists",
-    "image": {
-        "repo": "aiguestdj/roon-extension",
-        "tags": {
-            "amd64": "latest",
-            "arm64": "latest"
-        },
-        "binds": [
-            "/app/config"
-        ],
-        "options": {
-            "env": {
-                "HOSTNAME": "0.0.0.0",
-                "PORT": 9010,
-                "OPENAI_KEY": "PASTE_YOUR_OPEN_AI_API_KEY_HERE"
-            }
-        }
-    }
 }]
