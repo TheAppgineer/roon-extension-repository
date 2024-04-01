@@ -1,5 +1,5 @@
 {
-    "version": "1.0.16",
+    "version": "1.0.17",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -93,6 +93,28 @@
                 "binds": [
                     "/home/node/config.json"
                 ]
+            }
+        },
+        {
+            "author": "jjdenhertog",
+            "display_name": "AI Guest DJ",
+            "description": "Roon extension for AI Guest DJ, a web service that allows you to use AI to create playlists",
+            "image": {
+                "repo": "aiguestdj/roon-extension-aiguestdj",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/app/config/roon.json",
+                    "/app/config/openai.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "9010:Port",
+                        "OPENAI_KEY": "YOUR_OPEN_AI_KEY:OpenAI Key"
+                    }
+                }
             }
         }]
     },
