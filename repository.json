@@ -79,7 +79,7 @@
         "display_name": "AI Guest DJ",
         "description": "Roon extension for AI Guest DJ, a web service that allows you to use AI to create playlists",
         "image": {
-            "repo": "aiguestdj/roon-extension",
+            "repo": "aiguestdj/roon-extension-aiguestdj",
             "tags": {
                 "amd64": "latest",
                 "arm64": "latest"
