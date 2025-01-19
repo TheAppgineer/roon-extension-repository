@@ -200,14 +200,28 @@
             }
         },
         {
-            "author": "Doc Bobo",
+            "author": "Boris Prüßmann, Jason Charrier and others",
+            "display_name": "Denon/Marantz AVR",
+            "description": "Roon Volume Control Extension for Denon/Marantz AVR receivers",
+            "image": {
+                "repo": "docbobo/roon-extension-denon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
+            }
+        },
+        {
+            "author": "Boris Prüßmann",
             "display_name": "Arcam AVR390/550/850/AV860/SR250",
             "description": "Roon Volume Control Extension for Arcam AVR390/550/850/AV860/SR250 receivers",
             "image": {
                 "repo": "docbobo/roon-extension-arcam",
                 "tags": {
                     "amd64": "latest",
-                    "arm": "latest",
                     "arm64": "latest"
                 },
                 "binds": [
