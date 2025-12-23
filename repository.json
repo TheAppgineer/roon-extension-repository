@@ -1,5 +1,5 @@
 {
-    "version": "1.0.18",
+    "version": "1.0.19",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -321,6 +321,28 @@
                     "devices": [
                         "/dev/bus/usb/:USB Device Path"
                     ]
+                }
+            }
+        },
+        {
+            "author": "Muness",
+            "display_name": "Roon Knob",
+            "description": "Hardware volume knob for Roon with ESP32-S3 touchscreen displaying now-playing artwork and track info",
+            "image": {
+                "repo": "muness/roon-extension-knob",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/app/data/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "8088:HTTP Port",
+                        "TZ": ":Time Zone"
+                    }
                 }
             }
         }]
