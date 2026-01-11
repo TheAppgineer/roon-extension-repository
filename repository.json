@@ -335,9 +335,14 @@
                     "arm": "latest",
                     "arm64": "latest"
                 },
-                "binds": [
-                    "/home/node/app/data/config.json"
-                ],
+                "config": {
+                    "Volumes": {
+                        "/data": {}
+                    },
+                    "HostConfig": {
+                        "Binds": [ "roon-knob-data:/data" ]
+                    }
+                },
                 "options": {
                     "env": {
                         "PORT": "8088:HTTP Port",
