@@ -329,7 +329,7 @@
             "display_name": "Roon Knob",
             "description": "Hardware volume knob for Roon with ESP32-S3 touchscreen displaying now-playing artwork and track info",
             "image": {
-                "repo": "muness/unified-hifi-control",
+                "repo": "muness/roon-extension-knob",
                 "tags": {
                     "amd64": "latest",
                     "arm": "latest",
