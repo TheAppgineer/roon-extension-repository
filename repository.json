@@ -185,12 +185,12 @@
             "image": {
 		            "repo": "hassejohansen/roon-extension-ikea-tradfri",
 		            "tags": {
-                    "amd64": "latest",
-                    "arm": "latest",
-                    "arm64": "latest"
+	                    "amd64": "latest",
+	                    "arm": "latest",
+	                    "arm64": "latest"
 		            },
 		            "binds": [
-                    "/home/node/config.json"
+                    	"/home/node/config.json"
 		            ]
             }
         },
