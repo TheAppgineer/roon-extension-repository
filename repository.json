@@ -1,5 +1,5 @@
 {
-    "version": "1.0.8",
+    "version": "1.0.19",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -94,6 +94,28 @@
                     "/home/node/config.json"
                 ]
             }
+        },
+        {
+            "author": "jjdenhertog",
+            "display_name": "AI Guest DJ",
+            "description": "Roon extension for AI Guest DJ, a web service that allows you to use AI to create playlists",
+            "image": {
+                "repo": "aiguestdj/roon-extension-aiguestdj",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/app/config/roon.json",
+                    "/app/config/openai.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "9010:Port",
+                        "OPENAI_KEY": "YOUR_OPEN_AI_KEY:OpenAI Key"
+                    }
+                }
+            }
         }]
     },
     {
@@ -161,15 +183,82 @@
             "display_name": "Roon Tradfri",
             "description": "Roon Extension to control an IKEA Tradfri Plug to turn power on/off depending on Roon Zone playing state",
             "image": {
-		"repo": "hassejohansen/roon-extension-ikea-tradfri",
-		"tags": {
+		            "repo": "hassejohansen/roon-extension-ikea-tradfri",
+		            "tags": {
                     "amd64": "latest",
                     "arm": "latest",
                     "arm64": "latest"
-		},
-		"binds": [
+		            },
+		            "binds": [
                     "/home/node/config.json"
-		]
+		            ]
+            }
+        },
+        {
+            "author": "Guy Maurier",
+            "display_name": "Moon Volume/Source/Power Control",
+            "description": "Roon Extension to provide Roon control for Simaudio Moon devices via RS-232",
+            "image": {
+                "repo": "guymaurier/roon-extension-simaudio-moon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ],
+                "options": {
+                    "devices": [
+                        "/dev/ttyUSB0:Serial Device Path"
+                    ]
+                }
+            }
+        },
+        {
+            "author": "Boris Prüßmann, Jason Charrier and others",
+            "display_name": "Denon/Marantz AVR",
+            "description": "Roon Volume Control Extension for Denon/Marantz AVR receivers",
+            "image": {
+                "repo": "docbobo/roon-extension-denon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
+            }
+        },
+        {
+            "author": "Boris Prüßmann",
+            "display_name": "Arcam AVR390/550/850/AV860/SR250",
+            "description": "Roon Volume Control Extension for Arcam AVR390/550/850/AV860/SR250 receivers",
+            "image": {
+                "repo": "docbobo/roon-extension-arcam",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
+            }
+        },
+        {
+            "author": "Linvale",
+            "display_name": "Rheos",
+            "description": "Connect and Control Denon/Marantz Heos players from Roon",
+            "image": {
+                "repo": "rheos/roon-extension-rheos",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ]
             }
         }]
     },
@@ -250,6 +339,57 @@
                     ]
                 }
             }
+        },
+        {
+            "author": "Muness",
+            "display_name": "Roon Knob",
+            "description": "Hardware volume knob for Roon with ESP32-S3 touchscreen displaying now-playing artwork and track info",
+            "image": {
+                "repo": "muness/roon-extension-knob",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "config": {
+                    "Volumes": {
+                        "/data": {}
+                    },
+                    "HostConfig": {
+                        "Binds": [ "roon-knob-data:/data" ]
+                    }
+                },
+                "options": {
+                    "env": {
+                        "PORT": "8088:HTTP Port",
+                        "TZ": ":Time Zone"
+                    }
+                }
+            }
+        }]
+    },
+    {
+        "display_name": "Web / Connectivity",
+        "extensions": [{
+            "author": "Nihilux-Org",
+            "display_name": "Roon Web Stack",
+            "description": "An ensemble of tools to drive Roon from a web browser",
+            "image": {
+                "repo": "nihiluxorg/roon-web-stack",
+                "tags": {
+                    "amd64": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "3000:Port",
+                        "LOG_LEVEL": "info:Log Level"
+                    }
+                }
+            }
         }]
     },
     {
@@ -264,14 +404,6 @@
                     "amd64": "latest",
                     "arm": "latest",
                     "arm64": "latest"
-                },
-                "binds": [
-                    "/home/worker/config.json"
-                ],
-                "options": {
-                    "env": {
-                        "TZ": ":Time Zone"
-                    }
                 }
             }
         },
@@ -289,18 +421,14 @@
                 "binds": [
                     "/home/worker/config.json"
                 ],
-                "options": {
-                    "env": {
-                        "AUDIO_GROUP": "29:audio Group ID"
-                    }
-                },
                 "config": {
                     "HostConfig": {
                         "Devices": [{
                             "PathOnHost": "/dev/snd",
                             "PathInContainer": "/dev/snd",
                             "CgroupPermissions": "rwm"
-                        }]
+                        }],
+                        "Privileged": true
                     }
                 }
             }
@@ -354,6 +482,46 @@
                     }
                 }
             }
+        },
+        {
+            "author": "The Appgineer",
+            "display_name": "Librespot Entrypoint",
+            "description": "An Entrypoint that lets Spotify enter into your Roon system",
+            "image": {
+                "repo": "theappgineer/entrypoint-librespot",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/worker/config.json"
+                ]
+            }
+        }]
+    },
+    {
+        "display_name": "Social",
+        "extensions": [{
+            "author": "The Appgineer",
+            "display_name": "Sharoon",
+            "description": "Roon Extension that socializes \"now playing\"",
+            "image": {
+                "repo": "theappgineer/roon-extension-sharoon",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/home/node/config.json"
+                ],
+                "options": {
+                    "env": {
+                        "PORT": "5501:Local Web Server Port"
+                    }
+                }
+            }
         }]
     },
     {
@@ -365,7 +533,9 @@
             "image": {
                 "repo": "fjgalesloot/roon-extension-mqtt",
                 "tags": {
-                    "amd64": "latest"
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
                 },
                 "binds": [
                     "/usr/src/app/config/config.json"
