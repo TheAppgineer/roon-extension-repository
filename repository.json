@@ -1,5 +1,5 @@
 {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "categories": [{
         "display_name": "System",
         "extensions": [{
@@ -115,6 +115,22 @@
                         "OPENAI_KEY": "YOUR_OPEN_AI_KEY:OpenAI Key"
                     }
                 }
+            }
+        },
+        {
+            "author": "Stubaggs",
+            "display_name": "Party Mode",
+            "description": "Roon Extension for parties: guests request music from their phone, no app needed",
+            "image": {
+                "repo": "stubaggs/roon-extension-party-mode",
+                "tags": {
+                    "amd64": "latest",
+                    "arm": "latest",
+                    "arm64": "latest"
+                },
+                "binds": [
+                    "/usr/src/app/config.json"
+                ]
             }
         }]
     },
